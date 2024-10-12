@@ -1,0 +1,56 @@
+site_name: NASEC Docs
+copyright: >
+  <div align="center">
+  Copyright &copy; 2024 Ryan Algar
+  </div>
+repo_url: https://github.com/ralgar/nasec-docs
+site_url: https://ralgar.github.io/nasec-docs/
+docs_dir: ./content
+
+theme:
+  name: material
+  palette:
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  features:
+    - content.code.copy
+    - navigation.instant
+    - navigation.sections
+
+extra:
+  generator: false
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tasklist
+  - tables
+
+nav:
+  - Overview: index.md
+  - IT Fundamentals:
+    - fundamentals/filesystems.md
+  - Linux:
+    - Troubleshooting:
+      - linux/troubleshooting/sudo-privileges.md
+  - Troubleshooting:
+    - troubleshooting/blade-access.md
