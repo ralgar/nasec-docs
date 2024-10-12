@@ -32,32 +32,64 @@ A filesystem is a method and structure used by operating systems to manage how
 As mentioned above, filesystems form a hierarchy (a tree structure), starting
  from the root directory.
 
-Here's a basic example of how a Linux filesystem structure might look like,
- starting from the root directory (`/`):
+Here's a basic example of how a filesystem structure might look like:
 
-```
-/
-├── bin
-│   └── exec
-│   └── ls
-│   └── program1
-│   └── program2
-│   └── script.sh
-├── etc
-│   ├── program1
-│   │   └── config.yaml
-│   ├── program2
-│   │   └── config.ini
-│   └── resolv.conf
-├── home
-│   ├── user1
-│   │   └── file1.txt
-│   └── user2
-│       └── file2.txt
-└── var
-    ├── lib
-    └── log
-```
+=== "Windows"
+
+    ```sh
+    # Starting from the Windows root directory 'C:\'
+    C:\
+    ├── Program Files
+    │   ├── Common Files
+    │   ├── Microsoft Office
+    │   ├── Windows Defender
+    ├── Program Files (x86)
+    │   ├── Adobe
+    │   ├── Internet Explorer
+    │   └── Microsoft Visual Studio
+    ├── Users
+    │   ├── Default
+    │   ├── Public
+    │   └── User
+    │       ├── Desktop
+    │       ├── Documents
+    │       ├── Downloads
+    │       ├── Music
+    │       ├── Pictures
+    │       ├── Videos
+    ├── Windows
+    │   ├── System32
+    │   ├── Logs
+    │   ├── Temp
+    └── hiberfil.sys
+    ```
+
+=== "Linux"
+
+    ```sh
+    # Starting from the Linux root directory '/'
+    /
+    ├── bin
+    │   └── exec
+    │   └── ls
+    │   └── program1
+    │   └── program2
+    │   └── script.sh
+    ├── etc
+    │   ├── program1
+    │   │   └── config.yaml
+    │   ├── program2
+    │   │   └── config.ini
+    │   └── resolv.conf
+    ├── home
+    │   ├── user1
+    │   │   └── file1.txt
+    │   └── user2
+    │       └── file2.txt
+    └── var
+        ├── lib
+        └── log
+    ```
 
 ---
 
@@ -107,9 +139,17 @@ An **absolute path** is the complete path required to locate a file on the
  filesystem. It always starts from the root directory, and it includes all
  directories leading to the target file or folder. For example:
 
-```
-C:\Users\Ryan\Documents\MySchoolAssignment.docx
-```
+=== "Windows"
+
+    ```
+    C:\Users\Ryan\Documents\MySchoolAssignment.docx
+    ```
+
+=== "Linux"
+
+    ```
+    /home/users/ryan/Documents/MySchoolAssignment.docx
+    ```
 
 #### Relative Paths
 
@@ -117,16 +157,34 @@ A **relative path** specifies the location of a file or directory *in relation*
  to the current working directory. Unlike an absolute path, it does *not* start
  from the root directory. Instead, it starts from the current working directory.
 
-If our current working directory is `C:\Users\Ryan`, then our relative path
- would be:
+=== "Windows"
 
-```
-.\Documents\MySchoolAssignment.docx
-```
+    If our current working directory is `C:\Users\Username`, then our relative path
+     would be:
 
-If we change our current working directory to `C:\Users\Ryan\Documents`, then
- our relative path becomes:
+    ```
+    .\Documents\MySchoolAssignment.docx
+    ```
 
-```
-.\MySchoolAssignment.docx
-```
+    If we change our current working directory to `C:\Users\Username\Documents`, then
+     our relative path becomes:
+
+    ```
+    .\MySchoolAssignment.docx
+    ```
+
+=== "Linux"
+
+    If our current working directory is `/home/username`, then our relative path
+     would be:
+
+    ```
+    ./Documents/MySchoolAssignment.docx
+    ```
+
+    If we change our current working directory to `/home/username/Documents`, then
+     our relative path becomes:
+
+    ```
+    ./MySchoolAssignment.docx
+    ```
