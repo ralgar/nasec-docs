@@ -1,8 +1,8 @@
-name: Pull Request
+name: Static Analysis
 on:
   pull_request:
 jobs:
-  container-test-job:
+  markdown-lint:
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/igorshubovych/markdownlint-cli:v0.38.0
