@@ -10,8 +10,10 @@ A filesystem is a method and structure used by operating systems to manage how
 ## Basic Concepts
 
 1. **Files and Directories:**
-  - **Files: **Individual, formatted pieces of data (like documents, images).
-  - **Directories (Folders):** Containers that hold files and other folders.
+
+   - **Files:** Individual, formatted pieces of data (like documents, images).
+   - **Directories (Folders):** Containers that hold files and other folders.
+
 1. **Path:** The location of a file or directory in the filesystem,
    represented as a series of names separated by slashes or backslashes.
 
@@ -159,15 +161,15 @@ A **relative path** specifies the location of a file or directory *in relation*
 
 === "Windows"
 
-    If our current working directory is `C:\Users\Username`, then our relative path
-     would be:
+    If our current working directory is `C:\Users\Username`, then our relative
+     path would be:
 
     ```
     .\Documents\MySchoolAssignment.docx
     ```
 
-    If we change our current working directory to `C:\Users\Username\Documents`, then
-     our relative path becomes:
+    If we change our current working directory to `C:\Users\Username\Documents`,
+     then our relative path becomes:
 
     ```
     .\MySchoolAssignment.docx
@@ -182,8 +184,8 @@ A **relative path** specifies the location of a file or directory *in relation*
     ./Documents/MySchoolAssignment.docx
     ```
 
-    If we change our current working directory to `/home/username/Documents`, then
-     our relative path becomes:
+    If we change our current working directory to `/home/username/Documents`,
+     then our relative path becomes:
 
     ```
     ./MySchoolAssignment.docx
