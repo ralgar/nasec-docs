@@ -50,6 +50,7 @@ markdown_extensions:
 nav:
   - Overview: index.md
   - IT Fundamentals:
+    - fundamentals/markdown.md
     - fundamentals/filesystems.md
   - Linux:
     - linux/navigation.md
