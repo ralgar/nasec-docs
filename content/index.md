@@ -1,7 +1,8 @@
-# NASEC Technical Documentation
+# NASEC Knowledge Base
 
-This site is exclusively maintained for the convenience of NASEC students!
+This site is a Knowledge Base, maintained exclusively for the professional
+ development and convenience of students in the NASEC program!
 
-Please be sure to check it out regularly, as it's going to be filled with all
- kinds of useful information that should help you out in both this program,
- and in your career.
+Be sure to check it out regularly, as it's going to be filled with all kinds
+ of useful information and resources that should help you out in both this
+ program, and in your career.

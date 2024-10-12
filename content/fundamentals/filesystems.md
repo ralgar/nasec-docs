@@ -11,7 +11,8 @@ A filesystem is a method and structure used by operating systems to manage how
 
 1. **Files and Directories:**
 
-   - **Files:** Individual, formatted pieces of data (like documents, images).
+   - **Files:** Containers of data in a specific format (like documents,
+     images, etc).
    - **Directories (Folders):** Containers that hold files and other folders.
 
 1. **Path:** The location of a file or directory in the filesystem,
@@ -20,12 +21,12 @@ A filesystem is a method and structure used by operating systems to manage how
 ### Windows Filesystem
 
 - **Root:** The root directory is usually `C:\`.
-- **Example Path:** `C:\Users\Username\Documents\file.txt`
+- **Example Path:** `C:\Users\John Smith\Documents\file.txt`
 
 ### Linux Filesystem
 
 - **Root:** The root directory is `/`.
-- **Example Path:** `/home/username/documents/file.txt`
+- **Example Path:** `/home/jsmith/Documents/file.txt`
 
 ---
 
@@ -34,7 +35,8 @@ A filesystem is a method and structure used by operating systems to manage how
 As mentioned above, filesystems form a hierarchy (a tree structure), starting
  from the root directory.
 
-Here's a basic example of how a filesystem structure might look like:
+Here's a basic example of what a filesystem's structure might look like on
+ Windows and Linux:
 
 === "Windows"
 
@@ -52,7 +54,7 @@ Here's a basic example of how a filesystem structure might look like:
     ├── Users
     │   ├── Default
     │   ├── Public
-    │   └── User
+    │   └── John Smith
     │       ├── Desktop
     │       ├── Documents
     │       ├── Downloads
@@ -84,7 +86,7 @@ Here's a basic example of how a filesystem structure might look like:
     │   │   └── config.ini
     │   └── resolv.conf
     ├── home
-    │   ├── user1
+    │   ├── jsmith
     │   │   └── file1.txt
     │   └── user2
     │       └── file2.txt
@@ -144,13 +146,13 @@ An **absolute path** is the complete path required to locate a file on the
 === "Windows"
 
     ```
-    C:\Users\Ryan\Documents\MySchoolAssignment.docx
+    C:\Users\John Smith\Documents\MySchoolAssignment.docx
     ```
 
 === "Linux"
 
     ```
-    /home/users/ryan/Documents/MySchoolAssignment.docx
+    /home/jsmith/Documents/MySchoolAssignment.docx
     ```
 
 #### Relative Paths
@@ -161,15 +163,15 @@ A **relative path** specifies the location of a file or directory *in relation*
 
 === "Windows"
 
-    If our current working directory is `C:\Users\Username`, then our relative
-     path would be:
+    If our current working directory is `C:\Users\John Smith`, then our
+     relative path would be:
 
     ```
     .\Documents\MySchoolAssignment.docx
     ```
 
-    If we change our current working directory to `C:\Users\Username\Documents`,
-     then our relative path becomes:
+    If we change our current working directory to
+     `C:\Users\John Smith\Documents`, then our relative path becomes:
 
     ```
     .\MySchoolAssignment.docx
@@ -177,14 +179,14 @@ A **relative path** specifies the location of a file or directory *in relation*
 
 === "Linux"
 
-    If our current working directory is `/home/username`, then our relative path
+    If our current working directory is `/home/jsmith`, then our relative path
      would be:
 
     ```
     ./Documents/MySchoolAssignment.docx
     ```
 
-    If we change our current working directory to `/home/username/Documents`,
+    If we change our current working directory to `/home/jsmith/Documents`,
      then our relative path becomes:
 
     ```
