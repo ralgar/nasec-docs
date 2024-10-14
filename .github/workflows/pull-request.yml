@@ -22,6 +22,6 @@ jobs:
           username: Knowledge Base Notifier
           color: '#0050B5'
           description: The Knowledge Base has been updated!
-          details: "URL: https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}/"
+          details: "Link: https://ralgar.github.io/nasec-kb/"
           footer: ''
           webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
