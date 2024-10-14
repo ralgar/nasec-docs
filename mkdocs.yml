@@ -52,6 +52,7 @@ nav:
   - IT Fundamentals:
     - fundamentals/markdown.md
     - fundamentals/filesystems.md
+    - fundamentals/shells-and-terminals.md
   - Linux:
     - linux/navigation.md
     - Troubleshooting:
