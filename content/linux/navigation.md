@@ -2,20 +2,20 @@
 
 ## Basic Concepts
 
-The terminal in linux is like communicating with your computer directly.
-Instead of having graphical apps make the system calls for you, you directly
-tell the computer what to do.
+The terminal in Linux is just a way to communicate with your computer
+ directly. Instead of having graphical apps make system calls for you,
+ you directly tell the computer what to do using commands.
 
 Here are some basic concepts to understand so you can intuitively
-tell what the terminal is doing.
+ understand what the terminal is doing:
 
--Everything (and I do mean everything) in linux is a file.
- Even the hardware in your computer is represented by a file.
--While using a terminal you will always be somewhere in the
- file structure. You can think of it as a file manager except
- you as the user are in the location you are looking at.
--Every command you run will be run in the location you are
- in (unless you specify otherwise).
+- Everything (and I do mean everything) in Linux is a file.
+  Even the hardware in your computer is represented by a file.
+- While using a terminal you will always be somewhere in the
+  filesystem structure. You can think of it as a file manager, except
+  you as the user are in the directory you are looking at.
+- Every command you run will be run in the directory you are
+  currently in (unless you specify otherwise).
 
 ## Additional Resources
 
