@@ -62,13 +62,13 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v2
 
-      - name: Notify Discord server
+      - name: Notify Discord Server
         uses: Zmicier14/discord-webhook@v1.0.6
         with:
           severity: info
           username: Knowledge Base Notifier
           color: '#0050B5'
           description: The Knowledge Base has been updated!
-          details: "URL: https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}/"
+          details: "https://ralgar.github.io/nasec-kb/"
           footer: ''
           webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
