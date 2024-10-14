@@ -16,7 +16,7 @@ jobs:
         run: markdownlint "content/**/*.md"
 
       - name: Notify Discord server
-        uses: Zmicier/discord-webhook@v1.0.6
+        uses: Zmicier14/discord-webhook@v1.0.6
         with:
           severity: info
           username: Knowledge Base Notifier
