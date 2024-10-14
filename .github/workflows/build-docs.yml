@@ -61,3 +61,14 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
+
+      - name: Notify Discord server
+        uses: Zmicier/discord-webhook@v1.0.6
+        with:
+          severity: info
+          username: Knowledge Base Notifier
+          color: '#0050B5'
+          description: The Knowledge Base has been updated!
+          details: "URL: https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}/"
+          footer: ''
+          webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
